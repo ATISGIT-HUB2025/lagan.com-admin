@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/logo.png"
+      type="image/x-icon"
+    />
+    <title>Lagan.Com | Admin</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+    <!-- ico-font-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/icofont.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Themify icon-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/themify.css"
+    />
+    <!-- Flag icon-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/flag-icon.css"
+    />
+    <!-- Feather icon-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/feather-icon.css"
+    />
+    <!-- Plugins css start-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/datatables.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/datatable-extension.css"
+    />
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vendors/bootstrap.css"
+    />
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link
+      id="color"
+      rel="stylesheet"
+      href="assets/css/color-1.css"
+      media="screen"
+    />
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- loader starts-->
+    <div class="loader-wrapper">
+      <div class="loader">
+        <div class="loader4"></div>
+      </div>
+    </div>
+    <!-- loader ends-->
+
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <!-- Page Header Start-->
+      <div class="page-header">
+        <div class="header-wrapper row m-0">
+          <form class="form-inline search-full col" action="#" method="get">
+            <div class="form-group w-100">
+              <div class="Typeahead Typeahead--twitterUsers">
+                <div class="u-posRelative">
+                  <input
+                    class="demo-input Typeahead-input form-control-plaintext w-100"
+                    type="text"
+                    placeholder="Search .."
+                    name="q"
+                    title=""
+                    autofocus
+                  />
+                  <div class="spinner-border Typeahead-spinner" role="status">
+                    <span class="sr-only">Loading... </span>
+                  </div>
+                  <i class="close-search" data-feather="x"></i>
+                </div>
+                <div class="Typeahead-menu"></div>
+              </div>
+            </div>
+          </form>
+          <div class="header-logo-wrapper col-auto p-0">
+            <div class="logo-wrapper">
+              <a href="index.html"
+                ><img
+                  class="img-fluid for-light"
+                  src="assets/images/logo/logo_dark.png"
+                  alt="logo-light" /><img
+                  class="img-fluid for-dark"
+                  src="assets/images/logo/logo.png"
+                  alt="logo-dark"
+              /></a>
+            </div>
+            <div class="toggle-sidebar">
+              <i
+                class="status_toggle middle sidebar-toggle"
+                data-feather="align-center"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="left-header col-xxl-5 col-xl-6 col-lg-5 col-md-4 col-sm-3 p-0"
+          >
+            <div>
+              <a class="toggle-sidebar" href="#">
+                <i class="iconly-Category icli"> </i
+              ></a>
+              <div class="d-flex align-items-center gap-2">
+                <h4 class="f-w-600">Welcome Back</h4>
+                <img class="mt-0" src="assets/images/hand.gif" alt="hand-gif" />
+              </div>
+            </div>
+            <div class="welcome-content d-xl-block d-none">
+              <span class="text-truncate col-12"
+                >Here’s what’s happening with your store today.
+              </span>
+            </div>
+          </div>
+          <div
+            class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto"
+          >
+            <ul class="nav-menus">
+              <li>
+                <div class="mode">
+                  <!-- <i class="moon" data-feather="moon"> </i> -->
+                  <i class="bi bi-brightness-high"></i>
+                </div>
+              </li>
+
+              <li class="onhover-dropdown notification-down">
+                <div class="notification-box">
+                  <i class="bi bi-bell" style="font-size: 20px"></i
+                  ><span class="badge rounded-pill badge-secondary">4 </span>
+                </div>
+                <div class="onhover-show-div notification-dropdown active">
+                  <div class="card mb-0">
+                    <div class="card-header">
+                      <div class="common-space">
+                        <h4 class="text-start f-w-600">Notitications</h4>
+                        <div><span>4 New</span></div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="notitications-bar">
+                        <div class="notification-card">
+                          <ul>
+                            <li
+                              class="notification d-flex w-100 justify-content-between align-items-center"
+                            >
+                              <div
+                                class="d-flex w-100 notification-data justify-content-center align-items-center gap-2"
+                              >
+                                <div class="user-alerts flex-shrink-0">
+                                  <img
+                                    class="rounded-circle img-fluid img-40"
+                                    src="/assets/images/user/7.jpg"
+                                    alt="user"
+                                  />
+                                </div>
+                                <div class="flex-grow-1">
+                                  <div class="common-space user-id w-100">
+                                    <div class="common-space w-100">
+                                      <a class="f-w-500 f-12" href="lead.html"
+                                        >Suraj Jamdade</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <span class="f-w-500 f-light f-12"
+                                      >Lead Generated...😊</span
+                                    >
+                                  </div>
+                                </div>
+                                <span class="f-light f-w-500 f-12">44 sec</span>
+                              </div>
+                            </li>
+
+                            <li
+                              class="notification d-flex w-100 justify-content-between align-items-center"
+                            >
+                              <div
+                                class="d-flex w-100 notification-data justify-content-center align-items-center gap-2"
+                              >
+                                <div class="user-alerts flex-shrink-0">
+                                  <img
+                                    class="rounded-circle img-fluid img-40"
+                                    src="/assets/images/user/7.jpg"
+                                    alt="user"
+                                  />
+                                </div>
+                                <div class="flex-grow-1">
+                                  <div class="common-space user-id w-100">
+                                    <div class="common-space w-100">
+                                      <a class="f-w-500 f-12" href="lead.html"
+                                        >Suraj Jamdade</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <span class="f-w-500 f-light f-12"
+                                      >Lead Generated...😊</span
+                                    >
+                                  </div>
+                                </div>
+                                <span class="f-light f-w-500 f-12">44 sec</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="profile-nav onhover-dropdown">
+                <div class="media profile-media">
+                  <img
+                    class="b-r-10"
+                    src="assets/images/dashboard/profile.png"
+                    alt=""
+                  />
+                  <div class="media-body d-xxl-block d-none box-col-none">
+                    <div class="d-flex align-items-center gap-2">
+                      <span>Alex Mora </span
+                      ><i class="middle fa fa-angle-down"> </i>
+                    </div>
+                    <p class="mb-0 font-roboto">Admin</p>
+                  </div>
+                </div>
+                <ul class="profile-dropdown onhover-show-div">
+                  <li>
+                    <a href="user-profile.html"
+                      ><i data-feather="user"></i><span>My Profile</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="edit-profile.html">
+                      <i data-feather="settings"></i><span>Settings</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="btn btn-pill btn-outline-primary btn-sm"
+                      href="index.html"
+                      >Log Out</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Page Header Ends -->
+
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper">
+        <!-- Page Sidebar Start-->
+        <div class="sidebar-wrapper" data-layout="stroke-svg">
+          <div class="logo-wrapper">
+            <a href="index.html"
+              ><img class="img-fluid" src="assets/images/logo/logo.png" alt=""
+            /></a>
+            <div class="back-btn"><i class="fa fa-angle-left"> </i></div>
+            <div class="toggle-sidebar">
+              <i
+                class="status_toggle middle sidebar-toggle"
+                data-feather="grid"
+              >
+              </i>
+            </div>
+          </div>
+          <div class="logo-icon-wrapper">
+            <a href="index.html"
+              ><img
+                class="img-fluid"
+                src="assets/images/logo/logo-icon.png"
+                alt=""
+            /></a>
+          </div>
+          <nav class="sidebar-main">
+            <div class="left-arrow" id="left-arrow">
+              <i data-feather="arrow-left"></i>
+            </div>
+            <div id="sidebar-menu">
+              <ul class="sidebar-links" id="simple-bar">
+                <li class="back-btn">
+                  <a href="index.html"
+                    ><img
+                      class="img-fluid"
+                      src="assets/images/logo/logo-icon.png"
+                      alt=""
+                  /></a>
+                  <div class="mobile-back text-end">
+                    <span>Back </span
+                    ><i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
+                  </div>
+                </li>
+
+                <li class="sidebar-main-title">
+                  <div>
+                    <h6 class="lan-1">General</h6>
+                  </div>
+                </li>
+
+                <li class="sidebar-list">
+                  <a
+                    class="sidebar-link sidebar-title link-nav active"
+                    href="dashboard.html"
+                  >
+                    <i class="bi bi-speedometer2 text-white"></i>&nbsp;
+                    <span>Dashboard</span></a
+                  >
+                </li>
+
+                <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <i class="bi bi-wrench text-white"></i>&nbsp;<span class="">
+                      Web Pages</span
+                    ></a
+                  >
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="home-banner.html">Home Banner</a>
+                    </li>
+                    <li>
+                      <a href="about-us.html">About Us</a>
+                    </li>
+                    <li>
+                      <a href="how-it-work.html">How It Work</a>
+                    </li>
+                    <li>
+                      <a href="success-stories.html">Success Stories</a>
+                    </li>
+                    <li>
+                      <a href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="download-app.html">Download App</a>
+                    </li>
+                    <li>
+                      <a href="faq.html">Faq</a>
+                    </li>
+                    <li>
+                      <a href="counter.html">Counter</a>
+                    </li>
+                    <li>
+                      <a href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="terms-conditions.html">Terms & Conditions</a>
+                    </li>
+                    <li>
+                      <a href="purchase-policy.html">Purchase Policy</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-list">
+                  <a
+                    class="sidebar-link sidebar-title link-nav"
+                    href="contact-enquiry.html"
+                  >
+                    <i class="bi bi-phone text-white"></i>&nbsp;
+                    <span>Contact Enquiry</span></a
+                  >
+                </li>
+                <li class="sidebar-list">
+                  <a
+                    class="sidebar-link sidebar-title link-nav"
+                    href="manage-package.html"
+                  >
+                    <i class="bi bi-box text-white"></i>&nbsp;
+                    <span>Manage Package</span></a
+                  >
+                </li>
+
+                <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <i class="bi bi-person-badge text-white"></i>&nbsp;<span
+                      class=""
+                      >User Attributes</span
+                    ></a
+                  >
+                  <ul class="sidebar-submenu">
+                    <li><a href="religion.html">Religion</a></li>
+                    <li><a href="blood-group.html">Blood Group</a></li>
+                    <li><a href="maritial-status.html">Maritial Status</a></li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <i class="bi bi-person text-white"></i>&nbsp;<span class=""
+                      >Manage Users</span
+                    ></a
+                  >
+                  <ul class="sidebar-submenu">
+                    <li><a href="active-users.html">Active Users</a></li>
+                    <li><a href="banned-users.html">Banned Users</a></li>
+                    <li>
+                      <a href="email-unverified.html">Email Unverified</a>
+                    </li>
+                    <li>
+                      <a href="mobile-unverified.html">Mobile Unverified</a>
+                    </li>
+                    <li><a href="kyc-unverified.html">KYC Unverified</a></li>
+                    <li><a href="kyc-pending.html">KYC Pending</a></li>
+                    <li><a href="all-users.html">All Users</a></li>
+                    <li>
+                      <a href="send-notification.html">Send Notification</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <i class="bi bi-book text-white"></i>&nbsp;<span class="">
+                      Users Intractions</span
+                    ></a
+                  >
+                  <ul class="sidebar-submenu">
+                    <li><a href="intrests.html">Intrests</a></li>
+                    <li>
+                      <a href="ignoreed-profile.html">Ignoreed Profile</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <i class="bi bi-currency-rupee text-white"></i>&nbsp;<span
+                      class=""
+                    >
+                      Payments</span
+                    ></a
+                  >
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="pending-payments.html">Pending Payments</a>
+                    </li>
+                    <li>
+                      <a href="approved-payments.html">Approved Payments</a>
+                    </li>
+                    <li>
+                      <a href="successful-payments.html">Successful Payments</a>
+                    </li>
+                    <li>
+                      <a href="rejected-payments.html">Rejected Payments</a>
+                    </li>
+                    <li>
+                      <a href="initiated-payments.html">Initiated Payments</a>
+                    </li>
+                    <li>
+                      <a href="all-payments.html">All Payments</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-list">
+                  <a
+                    class="sidebar-link sidebar-title link-nav"
+                    href="general-settings.html"
+                  >
+                    <i class="bi bi-gear text-white"></i>&nbsp;
+                    <span>General Settings</span></a
+                  >
+                </li>
+              </ul>
+              <div class="right-arrow" id="right-arrow">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Page Sidebar Ends-->
+
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-6">
+                  <h6>About Us</h6>
+                </div>
+                <div class="col-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="index.html">
+                        <i class="bi bi-house"></i>
+                      </a>
+                    </li>
+                    <li class="breadcrumb-item">Dashboard</li>
+                    <li class="breadcrumb-item active">About Us</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 card p-3">
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-4 mb-4">
+                      <label for="">Title</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <label for="">Banner</label>
+                      <input type="file" class="form-control" />
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <label for="">Video URL</label>
+                      <input type="url" class="form-control" />
+                    </div>
+                    <div class="col-lg-12 mb-4">
+                      <label for="">Description</label>
+                      <textarea name="" id="" class="form-control"></textarea>
+                    </div>
+
+                    <div class="col-md-12 text-end">
+                      <button
+                        class="btn btn-primary btn-xs px-4 py-1"
+                        type="submit"
+                      >
+                        <i class="bi bi-save2"></i> Submit
+                      </button>
+                      <button
+                        class="btn btn-secondary btn-xs px-4 py-1"
+                        type="button"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid Ends-->
+        </div>
+        <!-- footer start-->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 footer-copyright text-center">
+                <p class="mb-0">Copyright 2025 © All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- latest jquery-->
+
+    <!-- add modal -->
+    <div
+      class="modal fade"
+      id="addBooks"
+      tabindex="-1"
+      aria-labelledby="editUser"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Home Banner</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-toggle-wrapper social-profile text-start dark-sign-up"
+          >
+            <div class="modal-body">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label class="form-label" for="title">Title</label>
+                  <input
+                    class="form-control"
+                    id="title"
+                    name="title"
+                    type="text"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Title is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="subTitle">Sub Title</label>
+                  <input
+                    class="form-control"
+                    id="subTitle"
+                    name="subTitle"
+                    type="text"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Sub Title is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="banner">Banner</label>
+                  <input
+                    class="form-control"
+                    id="banner"
+                    name="banner"
+                    type="file"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Banner is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="url">URL</label>
+                  <input
+                    class="form-control"
+                    id="url"
+                    name="url"
+                    type="url"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Valid URL is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      id="flexSwitchCheckChecked"
+                      type="checkbox"
+                      role="switch"
+                      checked=""
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckChecked"
+                      >Status</label
+                    >
+                  </div>
+                  <div class="invalid-feedback">Please select a status.</div>
+                </div>
+
+                <div class="modal-footer">
+                  <div class="col-md-12">
+                    <button
+                      class="btn btn-primary btn-xs px-4 py-1"
+                      type="submit"
+                    >
+                      <i class="bi bi-save2"></i> Submit
+                    </button>
+                    <button
+                      class="btn btn-secondary btn-xs px-4 py-1"
+                      type="button"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- edit modal -->
+    <div
+      class="modal fade"
+      id="editBooks"
+      tabindex="-1"
+      aria-labelledby="editUser"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Home Banner</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-toggle-wrapper social-profile text-start dark-sign-up"
+          >
+            <div class="modal-body">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label class="form-label" for="title">Title</label>
+                  <input
+                    class="form-control"
+                    id="title"
+                    name="title"
+                    type="text"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Title is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="subTitle">Sub Title</label>
+                  <input
+                    class="form-control"
+                    id="subTitle"
+                    name="subTitle"
+                    type="text"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Sub Title is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="banner">Banner</label>
+                  <input
+                    class="form-control"
+                    id="banner"
+                    name="banner"
+                    type="file"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Banner is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="url">URL</label>
+                  <input
+                    class="form-control"
+                    id="url"
+                    name="url"
+                    type="url"
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Valid URL is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      id="flexSwitchCheckChecked"
+                      type="checkbox"
+                      role="switch"
+                      checked=""
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckChecked"
+                      >Status</label
+                    >
+                  </div>
+                  <div class="invalid-feedback">Please select a status.</div>
+                </div>
+
+                <div class="modal-footer">
+                  <div class="col-md-12">
+                    <button
+                      class="btn btn-primary btn-xs px-4 py-1"
+                      type="submit"
+                    >
+                      <i class="bi bi-save2"></i> Submit
+                    </button>
+                    <button
+                      class="btn btn-secondary btn-xs px-4 py-1"
+                      type="button"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- latest jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- feather icon js-->
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+    <!-- scrollbar js-->
+    <script src="assets/js/scrollbar/simplebar.js"></script>
+    <script src="assets/js/scrollbar/custom.js"></script>
+    <!-- Sidebar jquery-->
+    <script src="assets/js/config.js"></script>
+    <!-- Plugins JS start-->
+    <script src="assets/js/sidebar-menu.js"></script>
+    <script src="assets/js/sidebar-pin.js"></script>
+    <script src="assets/js/slick/slick.min.js"></script>
+    <script src="assets/js/slick/slick.js"></script>
+    <script src="assets/js/header-slick.js"></script>
+    <!-- calendar js-->
+    <script src="assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/dataTables.buttons.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/jszip.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/buttons.colVis.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/pdfmake.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/vfs_fonts.js"></script>
+    <script src="assets/js/datatable/datatable-extension/dataTables.autoFill.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/dataTables.select.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/buttons.bootstrap5.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/buttons.html5.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/buttons.print.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/dataTables.bootstrap5.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/dataTables.responsive.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/responsive.bootstrap5.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/dataTables.keyTable.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/dataTables.colReorder.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/dataTables.fixedHeader.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/dataTables.rowReorder.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/dataTables.scroller.min.js"></script>
+    <script src="assets/js/datatable/datatable-extension/custom.js"></script>
+    <script src="assets/js/tooltip-init.js"></script>
+    <!-- Plugins JS Ends-->
+    <!-- Theme js-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/theme-customizer/customizer.js"></script>
+  </body>
+</html>
