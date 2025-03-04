@@ -4,19 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="assets/images/logo/logo.png"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="assets/images/" type="image/x-icon" />
     <title>Lagan.Com | Admin</title>
-    <!-- Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&amp;display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
     <!-- ico-font-->
     <link
@@ -34,6 +23,7 @@
       type="text/css"
       href="assets/css/vendors/themify.css"
     />
+
     <!-- Flag icon-->
     <link
       rel="stylesheet"
@@ -70,12 +60,12 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="assets/css/vendors/datatables.css"
+      href="assets/css/vendors/echart.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="assets/css/vendors/datatable-extension.css"
+      href="assets/css/vendors/date-picker.css"
     />
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
@@ -176,32 +166,96 @@
             class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto"
           >
             <ul class="nav-menus">
-              <li class="d-md-block d-none">
-                <div class="form search-form mb-0">
-                  <div class="input-group">
-                    <span class="input-icon">
-                      <!-- <i class="bi bi-gear"></i> -->
-                      <input class="w-100" type="search" placeholder="Search"
-                    /></span>
-                  </div>
-                </div>
-              </li>
-              <li class="d-md-none d-block">
-                <div class="form search-form mb-0">
-                  <div class="input-group">
-                    <span class="input-show">
-                      <!-- <i class="bi bi-gear"></i> -->
-                      <div id="searchInput">
-                        <input type="search" placeholder="Search" /></div
-                    ></span>
-                  </div>
-                </div>
-              </li>
-
               <li>
                 <div class="mode">
                   <!-- <i class="moon" data-feather="moon"> </i> -->
                   <i class="bi bi-brightness-high"></i>
+                </div>
+              </li>
+
+              <li class="onhover-dropdown notification-down">
+                <div class="notification-box">
+                  <i class="bi bi-bell" style="font-size: 20px"></i
+                  ><span class="badge rounded-pill badge-secondary">4 </span>
+                </div>
+                <div class="onhover-show-div notification-dropdown active">
+                  <div class="card mb-0">
+                    <div class="card-header">
+                      <div class="common-space">
+                        <h4 class="text-start f-w-600">Notitications</h4>
+                        <div><span>4 New</span></div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="notitications-bar">
+                        <div class="notification-card">
+                          <ul>
+                            <li
+                              class="notification d-flex w-100 justify-content-between align-items-center"
+                            >
+                              <div
+                                class="d-flex w-100 notification-data justify-content-center align-items-center gap-2"
+                              >
+                                <div class="user-alerts flex-shrink-0">
+                                  <img
+                                    class="rounded-circle img-fluid img-40"
+                                    src="/assets/images/user/7.jpg"
+                                    alt="user"
+                                  />
+                                </div>
+                                <div class="flex-grow-1">
+                                  <div class="common-space user-id w-100">
+                                    <div class="common-space w-100">
+                                      <a class="f-w-500 f-12" href="lead.html"
+                                        >Suraj Jamdade</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <span class="f-w-500 f-light f-12"
+                                      >New Member Registred</span
+                                    >
+                                  </div>
+                                </div>
+                                <span class="f-light f-w-500 f-12">44 sec</span>
+                              </div>
+                            </li>
+
+                            <li
+                              class="notification d-flex w-100 justify-content-between align-items-center"
+                            >
+                              <div
+                                class="d-flex w-100 notification-data justify-content-center align-items-center gap-2"
+                              >
+                                <div class="user-alerts flex-shrink-0">
+                                  <img
+                                    class="rounded-circle img-fluid img-40"
+                                    src="/assets/images/user/7.jpg"
+                                    alt="user"
+                                  />
+                                </div>
+                                <div class="flex-grow-1">
+                                  <div class="common-space user-id w-100">
+                                    <div class="common-space w-100">
+                                      <a class="f-w-500 f-12" href="lead.html"
+                                        >Suraj Jamdade</a
+                                      >
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <span class="f-w-500 f-light f-12"
+                                      >New Member Registred</span
+                                    >
+                                  </div>
+                                </div>
+                                <span class="f-light f-w-500 f-12">44 sec</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </li>
 
@@ -295,6 +349,7 @@
                     <h6 class="lan-1">General</h6>
                   </div>
                 </li>
+
                 <li class="sidebar-list">
                   <a
                     class="sidebar-link sidebar-title link-nav active"
@@ -304,53 +359,159 @@
                     <span>Dashboard</span></a
                   >
                 </li>
+
                 <li class="sidebar-list">
-                  <a
-                    class="sidebar-link sidebar-title link-nav"
-                    href="members.html"
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <i class="bi bi-wrench text-white"></i>&nbsp;<span class="">
+                      Web Pages</span
+                    ></a
                   >
-                    <i class="bi bi-people text-white"></i>&nbsp;
-                    <span>Members</span></a
-                  >
-                </li>
-                <li class="sidebar-list">
-                  <a
-                    class="sidebar-link sidebar-title link-nav"
-                    href="books-sections.html"
-                  >
-                    <i class="bi bi-book text-white"></i>&nbsp;
-                    <span>Books Sections</span></a
-                  >
-                </li>
-                <li class="sidebar-list">
-                  <a
-                    class="sidebar-link sidebar-title link-nav"
-                    href="books-circulation.html"
-                  >
-                    <i class="bi bi-newspaper text-white"></i>&nbsp;
-                    <span>Books Circulation </span></a
-                  >
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="home-banner.html">Home Banner</a>
+                    </li>
+                    <li>
+                      <a href="about-us.html">About Us</a>
+                    </li>
+                    <li>
+                      <a href="how-it-work.html">How It Work</a>
+                    </li>
+                    <li>
+                      <a href="success-stories.html">Success Stories</a>
+                    </li>
+                    <li>
+                      <a href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="download-app.html">Download App</a>
+                    </li>
+                    <li>
+                      <a href="faq.html">Faq</a>
+                    </li>
+                    <li>
+                      <a href="counter.html">Counter</a>
+                    </li>
+                    <li>
+                      <a href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="terms-conditions.html">Terms & Conditions</a>
+                    </li>
+                    <li>
+                      <a href="purchase-policy.html">Purchase Policy</a>
+                    </li>
+                  </ul>
                 </li>
 
                 <li class="sidebar-list">
                   <a
                     class="sidebar-link sidebar-title link-nav"
-                    href="penalties-list.html"
+                    href="contact-enquiry.html"
                   >
-                    <i class="bi bi-x text-white"></i>&nbsp;
-                    <span>Penalties</span></a
+                    <i class="bi bi-phone text-white"></i>&nbsp;
+                    <span>Contact Enquiry</span></a
+                  >
+                </li>
+                <li class="sidebar-list">
+                  <a
+                    class="sidebar-link sidebar-title link-nav"
+                    href="manage-package.html"
+                  >
+                    <i class="bi bi-box text-white"></i>&nbsp;
+                    <span>Manage Package</span></a
                   >
                 </li>
 
                 <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="#">
-                    <i class="bi bi-gear text-white"></i>&nbsp;<span class=""
-                      >General Settings</span
+                    <i class="bi bi-person-badge text-white"></i>&nbsp;<span
+                      class=""
+                      >User Attributes</span
                     ></a
                   >
                   <ul class="sidebar-submenu">
-                    <li><a href="user-profile.html">Profile</a></li>
+                    <li><a href="religion.html">Religion</a></li>
+                    <li><a href="blood-group.html">Blood Group</a></li>
+                    <li><a href="maritial-status.html">Maritial Status</a></li>
                   </ul>
+                </li>
+
+                <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <i class="bi bi-person text-white"></i>&nbsp;<span class=""
+                      >Manage Users</span
+                    ></a
+                  >
+                  <ul class="sidebar-submenu">
+                    <li><a href="active-users.html">Active Users</a></li>
+                    <li><a href="banned-users.html">Banned Users</a></li>
+                    <li>
+                      <a href="email-unverified.html">Email Unverified</a>
+                    </li>
+                    <li>
+                      <a href="mobile-unverified.html">Mobile Unverified</a>
+                    </li>
+                    <li><a href="kyc-unverified.html">KYC Unverified</a></li>
+                    <li><a href="kyc-pending.html">KYC Pending</a></li>
+                    <li><a href="all-users.html">All Users</a></li>
+                    <li>
+                      <a href="send-notification.html">Send Notification</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <i class="bi bi-book text-white"></i>&nbsp;<span class="">
+                      Users Intractions</span
+                    ></a
+                  >
+                  <ul class="sidebar-submenu">
+                    <li><a href="intrests.html">Intrests</a></li>
+                    <li>
+                      <a href="ignoreed-profile.html">Ignoreed Profile</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <i class="bi bi-currency-rupee text-white"></i>&nbsp;<span
+                      class=""
+                    >
+                      Payments</span
+                    ></a
+                  >
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="pending-payments.html">Pending Payments</a>
+                    </li>
+                    <li>
+                      <a href="approved-payments.html">Approved Payments</a>
+                    </li>
+                    <li>
+                      <a href="successful-payments.html">Successful Payments</a>
+                    </li>
+                    <li>
+                      <a href="rejected-payments.html">Rejected Payments</a>
+                    </li>
+                    <li>
+                      <a href="initiated-payments.html">Initiated Payments</a>
+                    </li>
+                    <li>
+                      <a href="all-payments.html">All Payments</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-list">
+                  <a
+                    class="sidebar-link sidebar-title link-nav"
+                    href="general-settings.html"
+                  >
+                    <i class="bi bi-gear text-white"></i>&nbsp;
+                    <span>General Settings</span></a
+                  >
                 </li>
               </ul>
               <div class="right-arrow" id="right-arrow">

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&display=swap");
 
 :root {
-  --theme-deafult: #0c163e;
+  --theme-deafult: #461233;
   --theme-secondary: #fe6a49;
   --light-background: rgba(242, 243, 247, 0.7);
   --body-font-color: #86909c;
@@ -4138,6 +4138,7 @@ input:focus {
 label {
   margin-bottom: 0.5rem;
   font-weight: 500;
+  font-size: 10px;
 }
 
 .media-widgets .media-body {
@@ -59952,7 +59953,7 @@ table.table-bordered thead tr th p {
   a {
   padding: 7px 25px;
   font-size: 10px;
-  color: #fff;
+  color: #ffffff4a;
   display: block;
   position: relative;
   letter-spacing: 0.06em;
